@@ -20,12 +20,50 @@ header .home-logo{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
-header .header-categories{
+header ul.main-tabs {
     padding-top: 40px;
 }
 
-.header-categories .category{
+header ul.main-tabs li{
     margin-bottom: 20px;
+}
+
+/* sub-tabs */
+.sub-tabs{
+    position: fixed;
+    top:0;
+    left:223px;
+    display: flex;
+    height:85px;
+    align-items: flex-end;
+    padding-left:20px;
+
+}
+
+ul.sub-tabs li{  
+    width: 140px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #AAAAAA;
+    box-sizing: border-box;
+}
+
+ul.sub-tabs li.current{
+    color: #00AD84;
+    border-bottom: 3px solid #00AD84;
+}
+
+/* main and sub tabs */
+.main-tabs li, .sub-tabs li{
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: -0.6px;
 }
