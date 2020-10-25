@@ -1,0 +1,26 @@
+/* nav categories */
+
+.category{
+    cursor: pointer;
+}
+
+.category:active{
+    color: #00AD84;
+}
+
+/* button */
+.btn{
+    height: 40px;
+    color: #00AD84;
+    background: none;
+    padding:5.5px 12px;
+    border: 2px solid #00AD84;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 29px;
+    
+}
