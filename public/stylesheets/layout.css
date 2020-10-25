@@ -67,3 +67,8 @@ header .tabs li{
     line-height: 29px;
     letter-spacing: -0.6px;
 }
+
+/* sub-container */
+.sub-container{
+    padding: 40px 122px 0 20px;
+}
