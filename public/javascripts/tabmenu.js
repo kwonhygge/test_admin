@@ -1,4 +1,4 @@
-const tabs = document.querySelectorAll("ul.tabs li");
+const tabs = document.querySelectorAll("tabs.subs li");
 const tabContents = document.querySelectorAll(".tab-contents");
 
 const removeCurrentFromEveryTab = () => {

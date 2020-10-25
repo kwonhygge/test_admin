@@ -23,16 +23,16 @@ header .home-logo{
     cursor: pointer;
 }
 
-header ul.main-tabs {
+header .tabs {
     padding-top: 40px;
 }
 
-header ul.main-tabs li{
+header .tabs li{
     margin-bottom: 20px;
 }
 
 /* sub-tabs */
-.sub-tabs{
+.tabs.sub{
     position: fixed;
     top:0;
     left:223px;
@@ -43,7 +43,7 @@ header ul.main-tabs li{
 
 }
 
-ul.sub-tabs li{  
+.tabs.sub li{  
     width: 140px;
     height: 48px;
     display: flex;
@@ -53,13 +53,13 @@ ul.sub-tabs li{
     box-sizing: border-box;
 }
 
-ul.sub-tabs li.current{
+.tabs.sub li.current{
     color: #00AD84;
     border-bottom: 3px solid #00AD84;
 }
 
 /* main and sub tabs */
-.main-tabs li, .sub-tabs li{
+.tabs li{
     font-family: "Noto Sans KR", sans-serif;
     font-style: normal;
     font-weight: bold;
