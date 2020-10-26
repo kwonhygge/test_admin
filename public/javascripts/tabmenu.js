@@ -1,4 +1,4 @@
-const tabs = document.querySelectorAll("tabs.subs li");
+const tabs = document.querySelectorAll("tabs.sub li");
 const tabContents = document.querySelectorAll(".tab-contents");
 
 const removeCurrentFromEveryTab = () => {
@@ -11,8 +11,8 @@ const removeCurrentFromEveryTab = () => {
 }
 
 const handleClick = (e) => {
-    const activeTabName = e.target.attribute("data-tab");
-
+    const activeTabName = e.target.getAttribute("data-tab");
+    console.log("clicked");
     // 모든 탭으로부터 current 클래스를 제거하며 리셋
     removeCurrentFromEveryTab();
 
