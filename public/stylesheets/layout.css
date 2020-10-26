@@ -110,7 +110,9 @@ header .tabs li{
 .btn-container{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
+
 .btn-container button{
     margin-right: 10px;
 }
