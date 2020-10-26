@@ -1,3 +1,10 @@
+:root{
+  /* color */
+  --color-primary-green: #00AD84;
+  --color-primary-red: #FF585D;
+
+}
+
 /* margin */
 .marB-10 {
     margin-bottom: 10px;
@@ -15,6 +22,21 @@
     margin-bottom: 40px;
   }
   
+  .marR-10 {
+    margin-right: 10px;
+  }
+  .marR-15 {
+    margin-right: 15px;
+  }
+  .marR-20 {
+    margin-right: 20px;
+  }
+  .marR-30 {
+    margin-right: 30px;
+  }
+  .marR-40 {
+    margin-right: 40px;
+  }
   /* flex  */
   .flex {
     display: flex;
@@ -31,6 +53,13 @@
     color: #bebebe;
   }
   .current{
-    color: #00AD84;
+    color: var(--color-primary-green);
   }
   
+  .green{
+    background-color: var(--color-primary-green);
+  }
+
+  .red{
+    background-color: var(--color-primary-red);
+  }

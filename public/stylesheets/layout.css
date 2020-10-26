@@ -33,13 +33,9 @@ header .tabs li{
 
 /* sub-tabs */
 .tabs.sub{
-    position: fixed;
-    top:0;
-    left:223px;
     display: flex;
     height:85px;
     align-items: flex-end;
-    padding-left:20px;
 
 }
 
@@ -55,11 +51,11 @@ header .tabs li{
 
 .tabs.sub li.current{
     color: #00AD84;
-    border-bottom: 3px solid #00AD84;
+    border-bottom: 3px solid var(--color-primary-green);;
 }
 
-/* main and sub tabs */
-.tabs li{
+/* li for list */
+.tabs li, .table .prop{
     font-family: "Noto Sans KR", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -70,5 +66,56 @@ header .tabs li{
 
 /* sub-container */
 .sub-container{
-    padding: 40px 122px 0 20px;
+    margin-left:223px;
+    padding: 0 122px 30px 20px;
+}
+
+/* contents-container */
+.contents-container{
+    padding-top:20px;
+    margin-bottom:30px;
+}
+
+/* table */
+.table .row{
+    display: flex;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 20px 0;
+
+}
+
+.table .prop{
+    width:102px;
+    margin-right: 20px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+}
+.table .row.props .prop{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.table .prop:nth-child(6){
+    width:223px;
+}
+
+.row.no-data{
+    justify-content: center;
+    font-weight: normal;
+    display: none;
+}
+
+/* btn-container */
+.btn-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-container button{
+    margin-right: 10px;
+}
+.btn-container button:last-child{
+    margin-right:0;
 }
