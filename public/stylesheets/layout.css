@@ -53,6 +53,12 @@ header .tabs li{
     color: #00AD84;
     border-bottom: 3px solid var(--color-primary-green);;
 }
+.tab-contents{
+    display: none;
+}
+.tab-contents.current {
+    display: block;
+}
 
 /* li for list */
 .tabs li, .table .prop{

@@ -52,9 +52,7 @@
   .gray {
     color: #bebebe;
   }
-  .current{
-    color: var(--color-primary-green);
-  }
+
   
   .green{
     background-color: var(--color-primary-green);
