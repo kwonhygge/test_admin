@@ -25,6 +25,7 @@
     background: #E6E6E6;
 }
 .outlined-btn{
+    width: 120px;
     height: 40px;
     color: var(--color-primary-green);
     background: none;
@@ -37,6 +38,9 @@
     font-weight: bold;
     font-size: 16px;
     
+}
+.outlined-btn:hover{
+    cursor: pointer;
 }
 .outlined-btn img{
     vertical-align: 0;
