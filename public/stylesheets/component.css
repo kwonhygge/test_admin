@@ -20,6 +20,10 @@
     border-radius: 4px;
 }
 
+.solid-btn.disable{
+    color: #FFFFFF;
+    background: #E6E6E6;
+}
 .outlined-btn{
     height: 40px;
     color: var(--color-primary-green);
@@ -32,6 +36,8 @@
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 29px;
     
+}
+.outlined-btn img{
+    vertical-align: 0;
 }
