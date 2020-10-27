@@ -20,15 +20,15 @@ const handleClick = (e) => {
 
     // active 된 tab의 컨텐츠에 current 클래스 추가
     const activeTab = document.querySelector(`#${activeTabName}`);
-    console.log(e.target);
-    console.log(activeTabName);
     activeTab.classList.add("current");
+    checkBoxInit(activeTabName);
 }
 
 const tabInit = () => {
     tabs.forEach(tab => {
         tab.addEventListener("click", handleClick);
     })
+
 }
 
 tabInit();

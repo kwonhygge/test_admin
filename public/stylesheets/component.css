@@ -32,6 +32,8 @@
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 29px;
     
+}
+.outlined-btn img{
+    vertical-align: 0;
 }

@@ -79,7 +79,6 @@ header .tabs li{
 /* contents-container */
 .contents-container{
     padding-top:20px;
-    margin-bottom:30px;
 }
 
 /* table */
@@ -117,6 +116,7 @@ header .tabs li{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 30px 0;
 }
 
 .btn-container button{

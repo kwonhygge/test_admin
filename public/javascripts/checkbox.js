@@ -1,11 +1,12 @@
-const selectAllBox = document.getElementById("select-all");
-const checkBoxes = document.querySelectorAll(".checkbox")
-const numberOfChecked = document.querySelector(".checked-info .number");
+let selectAllBox;
+let checkBoxes;
+let numberOfChecked;
 
 const updateCheckedNum = () => {
     let sum = 0;
-    checkBoxes.forEach(checkbox => {
-        if (checkbox.checked) {
+
+    checkBoxes.forEach((checkbox, i) => {
+        if (i !== 0 && checkbox.checked) {
             sum += 1;
         }
     })
@@ -16,13 +17,21 @@ const handleSelectAll = () => {
     checkBoxes.forEach(checkbox => {
         checkbox.checked = selectAllBox.checked;
     })
-    updateCheckedNum;
+    updateCheckedNum();
 }
 
 
-selectAllBox.addEventListener("click", handleSelectAll);
-checkBoxes.forEach(
-    checkbox => {
-        checkbox.addEventListener("click", updateCheckedNum)
-    }
-)
+const checkBoxInit = (tabName) => {
+    selectAllBox = document.querySelector(`#${tabName} #select-all`);
+    checkBoxes = document.querySelectorAll(`#${tabName} .checkbox`)
+    numberOfChecked = document.querySelector(`#${tabName} .checked-info .number`);
+
+    selectAllBox.addEventListener("click", handleSelectAll);
+    checkBoxes.forEach(
+        checkbox => {
+            checkbox.addEventListener("click", updateCheckedNum)
+        }
+    )
+}
+
+checkBoxInit("tap1");
