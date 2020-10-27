@@ -23,8 +23,12 @@ const handleSelectAll = () => {
 
 const checkBoxInit = (tabName) => {
     selectAllBox = document.querySelector(`#${tabName} #select-all`);
+    // checkbox 가 없는 tab에서는 return
+    if (selectAllBox == null) return;
+
     checkBoxes = document.querySelectorAll(`#${tabName} .checkbox`)
     numberOfChecked = document.querySelector(`#${tabName} .checked-info .number`);
+
 
     selectAllBox.addEventListener("click", handleSelectAll);
     checkBoxes.forEach(
@@ -34,4 +38,4 @@ const checkBoxInit = (tabName) => {
     )
 }
 
-checkBoxInit("tap1");
+checkBoxInit("tab1");

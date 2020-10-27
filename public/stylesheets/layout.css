@@ -69,6 +69,9 @@ header .tabs li{
     line-height: 29px;
     letter-spacing: -0.6px;
 }
+.tabs li:hover{
+    cursor: pointer;
+}
 
 /* sub-container */
 .sub-container{
@@ -106,7 +109,7 @@ header .tabs li{
 }
 
 .row.no-data{
-    justify-content: center;
+    text-align: center;
     font-weight: normal;
     display: none;
 }
