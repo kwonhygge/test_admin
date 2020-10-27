@@ -23,6 +23,14 @@ header .home-logo{
     cursor: pointer;
 }
 
+header .header-sub{
+    height: calc(100% - 85px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header .tabs {
     padding-top: 40px;
 }
