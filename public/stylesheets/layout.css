@@ -107,20 +107,25 @@ header .tabs li{
     font-weight: normal;
     font-size: 14px;
 }
-.table .row.props .prop{
+
+/* table member */
+.table.member .row.props .prop{
     font-weight: bold;
     font-size: 16px;
 }
 
-.table .prop:nth-child(6){
+.table.member .prop:nth-child(6){
     width:223px;
 }
-
 .row.no-data{
     text-align: center;
     font-weight: normal;
     display: none;
 }
+
+/*  */
+
+
 
 /* btn-container */
 .btn-container{
