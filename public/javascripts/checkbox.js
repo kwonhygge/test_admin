@@ -2,14 +2,23 @@ let selectAllBox;
 let checkBoxes;
 let numberOfChecked;
 
-const updateCheckedNum = () => {
-    let sum = 0;
+const uncheckSelectAllBox = () => {
+    selectAllBox.checked = false;
+}
 
+const updateCheckedNum = () => {
+
+
+    
+    let sum = 0;
     checkBoxes.forEach((checkbox, i) => {
         if (i !== 0 && checkbox.checked) {
             sum += 1;
         }
     })
+
+    if(sum<checkBoxes.length-1) uncheckSelectAllBox();
+
     numberOfChecked.innerHTML = `${sum}`;
 }
 
