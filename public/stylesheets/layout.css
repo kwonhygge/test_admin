@@ -101,29 +101,36 @@ header .tabs li{
 }
 
 .table .prop{
-    width:102px;
     margin-right: 20px;
     text-align: center;
     font-weight: normal;
     font-size: 14px;
 }
-
-/* table member */
-.table.member .row.props .prop{
+.table .row.props .prop{
     font-weight: bold;
     font-size: 16px;
 }
 
-.table.member .prop:nth-child(6){
-    width:223px;
-}
 .row.no-data{
     text-align: center;
     font-weight: normal;
     display: none;
 }
 
-/*  */
+/* table member */
+.table.member .prop{
+    width:102px;
+}
+
+.table.member .prop:nth-child(6){
+    width:223px;
+}
+
+
+/*  table mainpage */
+.table.mainpage{
+
+}
 
 
 
