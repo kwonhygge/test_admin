@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("../head") %>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <%- include("../include/header") %>
+    <div class="sub-container">
+        <ul class="tabs sub">
+            <li>전체 회원</li>
+            <li>일반 회원</li>
+            <li class="current">열심 회원</li>
+            <li>블랙 리스트</li>
+
+        </ul>
+        <div class="contents-container">
+            <div id="tab3" class="tab-contents">
+                <ul class="table member">
+                    <li class="row props">
+                        <div class="prop"><input type="checkbox" class="checkbox" name="member" id="select-all"></div>
+                        <div class="prop">회원 유형</div>
+                        <div class="prop">아이디</div>
+                        <div class="prop">이름</div>
+                        <div class="prop">누적 구매 금액</div>
+                        <div class="prop">이메일</div>
+                        <div class="prop">연락처</div>
+                        <div class="prop">가입일</div>
+                    </li>
+                    <li class="row no-data body3" style="display: block;">등록된 회원이 없습니다</li>
+                </ul>
+                <div class="btn-container">
+                    <div class="checked-info body3 marR-30"><span class="number">0</span><span>명 선택됨</span></div>
+                    <button class="solid-btn disable">회원 유형 변경</button>
+                    <button class="solid-btn disable">회원 삭제</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <%- include("../include/footer") %>
+
+</body>
+
+</html>
