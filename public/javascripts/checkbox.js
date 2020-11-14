@@ -1,6 +1,7 @@
-let selectAllBox;
-let checkBoxes;
-let numberOfChecked;
+const selectAllBox =  document.querySelector(`#select-all`);;
+const checkBoxes = document.querySelectorAll(`.checkbox`)
+const numberOfChecked = document.querySelector(`.checked-info .number`);
+
 
 const uncheckSelectAllBox = () => {
     selectAllBox.checked = false;
@@ -31,12 +32,9 @@ const handleSelectAll = () => {
 
 
 const checkBoxInit = () => {
-    selectAllBox = document.querySelector(`#select-all`);
     // checkbox 가 없는 tab에서는 return
     if (selectAllBox == null) return;
 
-    checkBoxes = document.querySelectorAll(`.checkbox`)
-    numberOfChecked = document.querySelector(`.checked-info .number`);
 
 
     selectAllBox.addEventListener("click", handleSelectAll);
