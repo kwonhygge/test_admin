@@ -32,6 +32,7 @@ header .header-sub{
 }
 
 header .tabs {
+
     padding-top: 40px;
 }
 
@@ -83,7 +84,11 @@ header .tabs li{
 
 /* contents-container */
 .contents-container{
-    padding-top:20px;
+    padding-top:40px;
+}
+
+.contents-title{
+    padding-left: 20px;
 }
 
 /* tab-contents */
@@ -144,10 +149,19 @@ header .tabs li{
 }
 
 
-.table.mainpage .prop:nth-child(4){
+.table.mainpage .prop.large{
+    width: 485px;
+
+}
+.table.mainpage .prop.middle{
     width: 365px;
 
 }
+.table.mainpage .prop.small{
+    width: 245px;
+
+}
+
 
 .prop.index{
     padding-left: 20px;
