@@ -13,14 +13,15 @@
     <%- include("../include/header") %>
     <div class="sub-container">
         <ul class="tabs sub">
-            <li>전체 회원</li>
-            <li class="current">일반 회원</li>
-            <li>열심 회원</li>
-            <li>블랙 리스트</li>
-
+            <li onclick="location.href='/manage/member/total'">전체 회원</li>
+            <li onclick="location.href='/manage/member/normal'" class="current">일반 회원</li>
+            <li onclick="location.href='/manage/member/active'">열심 회원</li>
+            <li onclick="location.href='/manage/member/male'">남자 회원</li>
+            <li onclick="location.href='/manage/member/blackList'">블랙 리스트</li>
+            <li onclick="location.href='/manage/member/manager'">관리자</li>
         </ul>
         <div class="contents-container">
-            <div id="tab2" class="tab-contents">
+            <div class="tab-contents">
                 <ul class="table member">
                     <li class="row props">
                         <div class="prop"><input type="checkbox" class="checkbox" name="member" id="select-all">

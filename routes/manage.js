@@ -9,20 +9,30 @@ router.get('/mainpage', function (req, res, next) {
 
 
 /* GET member. */
-router.get('/member/1', function (req, res, next) {
-    res.render('member/tab1', { title: 'Express' });
+router.get('/member/total', function (req, res, next) {
+    res.render('member/total', { title: 'Express' });
 });
 
-router.get('/member/2', function (req, res, next) {
-    res.render('member/tab2', { title: 'Express' });
+router.get('/member/normal', function (req, res, next) {
+    res.render('member/normal', { title: 'Express' });
 });
-router.get('/member/3', function (req, res, next) {
-    res.render('member/tab3', { title: 'Express' });
+router.get('/member/active', function (req, res, next) {
+    res.render('member/active', { title: 'Express' });
 });
 
-router.get('/member/4', function (req, res, next) {
-    res.render('member/tab4', { title: 'Express' });
+router.get('/member/male', function (req, res, next) {
+    res.render('member/male', { title: 'Express' });
 });
+
+router.get('/member/blackList', function (req, res, next) {
+    res.render('member/blackList', { title: 'Express' });
+});
+
+router.get('/member/manager', function (req, res, next) {
+    res.render('member/manager', { title: 'Express' });
+});
+
+
 /* GET newsletter. */
 router.get('/newsletter', function (req, res, next) {
     res.render('newsletter/newsletter', { title: 'Express' });
