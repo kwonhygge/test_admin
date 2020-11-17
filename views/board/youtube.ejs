@@ -13,9 +13,9 @@
     <%- include("../include/header") %>
     <div class="sub-container">
         <ul class="tabs sub">
-            <li onclick="location.href='/manage/board/notice&news'" class="current">공지 및 뉴스</li>
+            <li onclick="location.href='/manage/board/notice&news'">공지 및 뉴스</li>
             <li onclick="location.href='/manage/board/introduction'">소개 및 멤버</li>
-            <li onclick="location.href='/manage/board/youtube'">유튜브</li>
+            <li onclick="location.href='/manage/board/youtube'" class="current">유튜브</li>
             <li onclick="location.href='/manage/board/column'">칼럼</li>
             <li onclick="location.href='/manage/board/FAQ'">FAQ</li>
             <li onclick="location.href='/manage/board/terms'">약관 관리</li>
@@ -26,20 +26,24 @@
                     <li class="row props">
                         <div class="prop"><input type="checkbox" class="checkbox" name="member" id="select-all">
                             <label for="select-all"></label></div>
+                        <div class="prop">이미지</div>
                         <div class="prop">게시일자</div>
-                        <div class="prop">카테고리</div>
-                        <div class="prop largest">타이틀</div>
-                        <div class="prop">조회수</div>
+                        <div class="prop small">타이틀</div>
+                        <div class="prop middle">내용</div>
+                        <div class="prop">링크</div>
                         <div class="prop">수정 및 삭제</div>
                     </li>
                     <li class="row no-data body3">등록된 회원이 없습니다</li>
                     <li class="row">
                         <div class="prop"><input type="checkbox" class="checkbox" name="member" id="id1" value="id1">
                             <label for="id1"></label></div>
+                        <div class="prop image"><img src="/images/gray.png" /></div>
                         <div class="prop">2020-10-11</div>
-                        <div class="prop">공지</div>
-                        <div class="prop largest justify-flex-start">7월 챌린저스 챌린지 안내</div>
-                        <div class="prop">0</div>
+                        <div class="prop small txt-left">액션 읽는 밤 4회 -핵금발 언니는 참지 않아!</div>
+                        <div class="prop middle txt-left">액션영화를 문학처럼 읽는다, 액션 읽는 밤 이번 영화는 2017년에 개봉한 샤를리즈 테론
+                            주연의 영화 ‘아토믹 블론드’입니다.
+                        </div>
+                        <div class="prop"><img src="/svg/link.svg" /></div>
                         <div class="prop edit-delete"><img src="/svg/edit.svg" /><img src="/svg/trash.svg" /></div>
                     </li>
 

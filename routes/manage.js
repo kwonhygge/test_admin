@@ -55,6 +55,9 @@ router.get('/newsletter', function (req, res, next) {
 router.get('/board/notice&news', function (req, res, next) {
     res.render('board/notice-news', { title: 'Express' });
 });
+router.get('/board/youtube', function (req, res, next) {
+    res.render('board/youtube', { title: 'Express' });
+});
 
 /* GET order. */
 router.get('/order', function (req, res, next) {

@@ -37,6 +37,11 @@
   .marR-40 {
     margin-right: 40px;
   }
+
+  /* txt align */
+  .txt-left{
+    text-align: left !important;
+  }
   /* flex  */
   .flex {
     display: flex;
