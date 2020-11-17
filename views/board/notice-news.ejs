@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("../head") %>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <%- include("../include/header") %>
+    <div class="sub-container">
+        <ul class="tabs sub">
+            <li onclick="location.href='/manage/board/notice&news'" class="current">공지 및 뉴스</li>
+            <li onclick="location.href='/manage/board/introduction'">소개 및 멤버</li>
+            <li onclick="location.href='/manage/board/youtube'">유튜브</li>
+            <li onclick="location.href='/manage/board/column'">칼럼</li>
+            <li onclick="location.href='/manage/board/FAQ'">FAQ</li>
+            <li onclick="location.href='/manage/board/terms'">약관 관리</li>
+        </ul>
+        <div class="contents-container">
+            <div class="tab-contents">
+                <ul class="table board type-check">
+                    <li class="row props">
+                        <div class="prop"><input type="checkbox" class="checkbox" name="member" id="select-all">
+                            <label for="select-all"></label></div>
+                        <div class="prop">이미지</div>
+                        <div class="prop">아이디</div>
+                        <div class="prop">이름</div>
+                        <div class="prop">누적 구매 금액</div>
+                        <div class="prop">이메일</div>
+                        <div class="prop">연락처</div>
+                        <div class="prop">광고 수신</div>
+                    </li>
+                    <li class="row no-data body3">등록된 회원이 없습니다</li>
+                    <li class="row">
+                        <div class="prop"><input type="checkbox" class="checkbox" name="member" id="id1" value="id1">
+                            <label for="id1"></label></div>
+                        <div class="prop">일반</div>
+                        <div class="prop">abc123</div>
+                        <div class="prop">가나다</div>
+                        <div class="prop">1,000</div>
+                        <div class="prop">gymbuddy@gmail.com</div>
+                        <div class="prop">010 1234 5678</div>
+                        <div class="prop ">O</div>
+                    </li>
+
+                </ul>
+                <div class="btn-container">
+                    <div class="checked-info body3 marR-30"><span class="number">0</span><span>명 선택됨</span></div>
+                    <button class="solid-btn green">회원 유형 변경</button>
+                    <button class="solid-btn red">회원 삭제</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <%- include("../include/footer") %>
+
+
+</body>
+
+</html>

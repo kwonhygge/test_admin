@@ -51,9 +51,9 @@ router.get('/newsletter', function (req, res, next) {
     res.render('newsletter/newsletter', { title: 'Express' });
 });
 
-/* GET posts. */
-router.get('/posts', function (req, res, next) {
-    res.render('posts/posts', { title: 'Express' });
+/* GET board. */
+router.get('/board/notice&news', function (req, res, next) {
+    res.render('board/notice-news', { title: 'Express' });
 });
 
 /* GET order. */
