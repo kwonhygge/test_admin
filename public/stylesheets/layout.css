@@ -115,6 +115,10 @@ header .tabs li{
     align-items: center;
     justify-content: center;
 }
+.table .prop:last-child{
+    margin-right: 0;
+    justify-content: flex-end;
+}
 .table .row.props .prop{
     font-weight: bold;
     font-size: 16px;
@@ -148,6 +152,10 @@ header .tabs li{
     width:100px;
 }
 
+.table.mainpage .prop.largest{
+    width: 725px;
+
+}
 
 .table.mainpage .prop.large{
     width: 485px;
