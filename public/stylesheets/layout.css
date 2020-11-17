@@ -32,6 +32,7 @@ header .header-sub{
 }
 
 header .tabs {
+
     padding-top: 40px;
 }
 
@@ -83,10 +84,21 @@ header .tabs li{
 
 /* contents-container */
 .contents-container{
-    padding-top:20px;
+    padding-top:40px;
 }
 
+.contents-title{
+    padding-left: 20px;
+}
+
+/* tab-contents */
+.tab-contents{
+    margin-bottom: 40px;
+}
+
+
 /* table */
+
 .table .row{
     display: flex;
     border-bottom: 1px solid #E6E6E6;
@@ -99,6 +111,13 @@ header .tabs li{
     text-align: center;
     font-weight: normal;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.table .prop:last-child{
+    margin-right: 0;
+    justify-content: flex-end;
 }
 .table .row.props .prop{
     font-weight: bold;
@@ -110,6 +129,13 @@ header .tabs li{
     font-weight: normal;
     display: none;
 }
+.prop.image{
+    height: 60px;
+}
+.prop.edit-delete img:nth-child(1){
+    margin-right: 10px;
+}
+
 
 /* table member */
 .table.member .prop{
@@ -126,7 +152,29 @@ header .tabs li{
     width:100px;
 }
 
+.table.mainpage .prop.largest{
+    width: 725px;
 
+}
+
+.table.mainpage .prop.large{
+    width: 485px;
+
+}
+.table.mainpage .prop.middle{
+    width: 365px;
+
+}
+.table.mainpage .prop.small{
+    width: 245px;
+
+}
+
+
+.prop.index{
+    padding-left: 20px;
+    width:30px !important;
+}
 
 /* btn-container */
 .btn-container{

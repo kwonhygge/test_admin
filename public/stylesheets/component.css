@@ -119,3 +119,10 @@
     -webkit-transition: -webkit-transform 200ms ease-out;
     transition: transform 200ms ease-out;
   }
+
+
+  /* review star */
+.review-star{
+    display: block;
+    text-align: center;
+}
