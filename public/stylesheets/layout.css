@@ -86,7 +86,14 @@ header .tabs li{
     padding-top:20px;
 }
 
+/* tab-contents */
+.tab-contents{
+    margin-bottom: 40px;
+}
+
+
 /* table */
+
 .table .row{
     display: flex;
     border-bottom: 1px solid #E6E6E6;
@@ -99,6 +106,9 @@ header .tabs li{
     text-align: center;
     font-weight: normal;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .table .row.props .prop{
     font-weight: bold;
@@ -110,6 +120,13 @@ header .tabs li{
     font-weight: normal;
     display: none;
 }
+.prop.image{
+    height: 60px;
+}
+.prop.edit-delete img:nth-child(1){
+    margin-right: 10px;
+}
+
 
 /* table member */
 .table.member .prop{
@@ -127,6 +144,15 @@ header .tabs li{
 }
 
 
+.table.mainpage .prop:nth-child(4){
+    width: 365px;
+
+}
+
+.prop.index{
+    padding-left: 20px;
+    width:30px !important;
+}
 
 /* btn-container */
 .btn-container{
