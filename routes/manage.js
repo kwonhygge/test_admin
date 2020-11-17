@@ -2,12 +2,25 @@ var express = require('express');
 var router = express.Router();
 
 /* GET main page. */
-router.get('/mainpage', function (req, res, next) {
-    res.render('mainpage/mainpage', { title: 'Express' });
+router.get('/mainpage/main', function (req, res, next) {
+    res.render('mainpage/main', { title: 'Express' });
+}); 
+
+router.get('/mainpage/rolling-banner', function (req, res, next) {
+    res.render('mainpage/rolling-banner', { title: 'Express' });
+}); 
+router.get('/mainpage/program&goods', function (req, res, next) {
+    res.render('mainpage/program-goods', { title: 'Express' });
+}); 
+router.get('/mainpage/notice&newsletter', function (req, res, next) {
+    res.render('mainpage/notice-newsletter', { title: 'Express' });
 });
-
-
-
+router.get('/mainpage/youtube&column', function (req, res, next) {
+    res.render('mainpage/youtube-column', { title: 'Express' });
+}); 
+router.get('/mainpage/rolling-review', function (req, res, next) {
+    res.render('mainpage/rolling-review', { title: 'Express' });
+}); 
 /* GET member. */
 router.get('/member/total', function (req, res, next) {
     res.render('member/total', { title: 'Express' });

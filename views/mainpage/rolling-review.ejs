@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-7">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <%- include("../head") %>
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include("../include/header") %>
+
+    <div class="sub-container">
+        <ul class="tabs sub">
+            <li onclick="location.href='/manage/mainpage/main'">메인 설정</li>
+            <li onclick="location.href='/manage/mainpage/rolling-banner'">롤링 배너</li>
+            <li onclick="location.href='/manage/mainpage/program&goods'">프로그램 및 굿즈</li>
+            <li onclick="location.href='/manage/mainpage/youtube&column'">유튜브 및 칼럼</li>
+            <li onclick="location.href='/manage/mainpage/notice&newsletter'">공지 및 뉴스</li>
+            <li onclick="location.href='/manage/mainpage/rolling-review'" class="current">롤링 리뷰</li>
+        </ul>
+
+        <div class="contents-container">
+
+        </div>
+    </div>
+
+
+
+    <%- include("../include/footer") %>
+</body>
+
+</html>
