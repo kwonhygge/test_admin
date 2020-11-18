@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-7">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <%- include("../head") %>
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include("../include/header") %>
+
+    <div class="sub-container">
+        <ul class="tabs sub">
+            <li onclick="location.href='/manage/mainpage/main'">메인 설정</li>
+            <li onclick="location.href='/manage/mainpage/rolling-banner'">롤링 배너</li>
+            <li onclick="location.href='/manage/mainpage/program&goods'">프로그램 및 굿즈</li>
+            <li onclick="location.href='/manage/mainpage/youtube&column'">유튜브 및 칼럼</li>
+            <li onclick="location.href='/manage/mainpage/notice&newsletter'">공지 및 뉴스</li>
+            <li onclick="location.href='/manage/mainpage/rolling-review'" class="current">롤링 리뷰</li>
+        </ul>
+
+        <div class="contents-container">
+
+            <!-- 운동 친구 소개 -->
+            <p class="contents-title underline marB-20 body3">약관 수정</p>
+
+            <div class="input-container">
+
+                <div class="input-item">
+                    <input type="text"  class="admin-input large disabled" placeholder="타이틀">
+                </div>
+
+                <div id="editor">
+                    <p>This is some sample content.</p>
+                </div>
+
+                <button class="solid-btn green">등록</button>
+            </div>
+
+    </div>
+
+
+
+    <%- include("../include/footer") %>
+</body>
+
+<script>
+    function addContent(url) {
+        location.replace(url);
+    };
+
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) , {
+                ckfinder: {
+                    uploadUrl: 'localhost:8090/ck/uploadImg'
+                }
+        });
+
+    document.getElementById("files").onchange = function () {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            // get loaded data and render thumbnail.
+            document.getElementById("image").src = e.target.result;
+        };
+
+        // read the image file as a data URL.
+        reader.readAsDataURL(this.files[0]);
+    };
+</script>
+
+</html>

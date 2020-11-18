@@ -23,6 +23,109 @@
 
         <div class="contents-container">
 
+            
+            <p class="contents-title underline marB-20 body3">공지 (최소 3개 등록 필수)</p>
+
+            <div class="input-container">
+                <p class="body3 marB-10">컴포넌트1</p>
+                <div class="custom-select small marB-20">
+                    <select>
+                    <option value="none">사용하지 않음</option>
+                    <option value="youtube">유튜브 리스트</option>
+                    <option value="program">프로그램 리스트</option>
+                    <option value="notice">공지 및 뉴스 리스트</option>
+                    <option value="rolling">롤링 리뷰</option>
+                    <option value="column">칼럼 리스트</option>
+                    <option value="goods">굿즈 리스트</option>
+                    </select>
+                </div>
+
+                <p class="body3 marB-10">컴포넌트2</p>
+                <div class="custom-select small marB-20">
+                    <select>
+                        <option value="none">사용하지 않음</option>
+                        <option value="youtube">유튜브 리스트</option>
+                        <option value="program">프로그램 리스트</option>
+                        <option value="notice">공지 및 뉴스 리스트</option>
+                        <option value="rolling">롤링 리뷰</option>
+                        <option value="column">칼럼 리스트</option>
+                        <option value="goods">굿즈 리스트</option>
+                    </select>
+                </div>
+
+                <p class="body3 marB-10">컴포넌트3</p>
+                <div class="custom-select small marB-20">
+                    <select>
+                        <option value="none">사용하지 않음</option>
+                        <option value="youtube">유튜브 리스트</option>
+                        <option value="program">프로그램 리스트</option>
+                        <option value="notice">공지 및 뉴스 리스트</option>
+                        <option value="rolling">롤링 리뷰</option>
+                        <option value="column">칼럼 리스트</option>
+                        <option value="goods">굿즈 리스트</option>
+                    </select>
+                </div>
+
+                <p class="body3 marB-10">컴포넌트4</p>
+                <div class="custom-select small marB-20">
+                    <select>
+                        <option value="none">사용하지 않음</option>
+                        <option value="youtube">유튜브 리스트</option>
+                        <option value="program">프로그램 리스트</option>
+                        <option value="notice">공지 및 뉴스 리스트</option>
+                        <option value="rolling">롤링 리뷰</option>
+                        <option value="column">칼럼 리스트</option>
+                        <option value="goods">굿즈 리스트</option>
+                    </select>
+                </div>
+
+                <p class="body3 marB-10">컴포넌트5</p>
+                <div class="custom-select small marB-20">
+                    <select>
+                        <option value="none">사용하지 않음</option>
+                        <option value="youtube">유튜브 리스트</option>
+                        <option value="program">프로그램 리스트</option>
+                        <option value="notice">공지 및 뉴스 리스트</option>
+                        <option value="rolling">롤링 리뷰</option>
+                        <option value="column">칼럼 리스트</option>
+                        <option value="goods">굿즈 리스트</option>
+                    </select>
+                </div>
+
+                <p class="body3 marB-10">컴포넌트6</p>
+                <div class="custom-select small marB-20">
+                    <select>
+                        <option value="none">사용하지 않음</option>
+                        <option value="youtube">유튜브 리스트</option>
+                        <option value="program">프로그램 리스트</option>
+                        <option value="notice">공지 및 뉴스 리스트</option>
+                        <option value="rolling">롤링 리뷰</option>
+                        <option value="column">칼럼 리스트</option>
+                        <option value="goods">굿즈 리스트</option>
+                    </select>
+                </div>
+            </div>
+
+
+            
+
+            <input type="text" class="admin-input small marB-30" value ="text" disabled/>
+        	<input type="text"  class="admin-input medium marB-30" value ="text"/>
+        	<input type="text"  class="admin-input large marB-30" value ="text"/>
+        	<div id="editor">
+        		<p>This is some sample content.</p>
+    		</div>
+    		
+    		<button class="solid-btn green">버튼</button>
+    		<button class="solid-btn disable">버튼</button>
+    		<button class="outlined-btn">버튼</button>
+    		<button class="outlined-btn disable"><span class="arrow-right">Right</span></button>
+    		
+	    		<input type="file" id="files"><br>
+	    		<img src="${pageContext.request.contextPath}/resources/images/file-none.png" id="image" class="thumbnail" alt="pre">
+	    		<label for ="files" class="solid-btn darkgray">이미지 업로드</label>
+
+
         </div>
     </div>
 
@@ -30,5 +133,27 @@
 
     <%- include("../include/footer") %>
 </body>
+
+<script>
+    ClassicEditor
+    .create( document.querySelector( '#editor' ) , {
+            ckfinder: {
+                uploadUrl: 'localhost:8090/ck/uploadImg'
+            }
+    });
+
+    document.getElementById("files").onchange = function () {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            // get loaded data and render thumbnail.
+            document.getElementById("image").src = e.target.result;
+        };
+
+        // read the image file as a data URL.
+        reader.readAsDataURL(this.files[0]);
+    };
+
+</script>
 
 </html>
