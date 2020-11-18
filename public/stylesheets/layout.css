@@ -127,13 +127,22 @@ header .tabs li{
     font-weight: normal;
     display: none;
 }
+
 .prop.image{
     height: 60px;
 }
 .prop.edit-delete img:nth-child(1){
     margin-right: 10px;
 }
+/* table depending on type   */
+.table.type-check .prop:first-child{
+    margin-right:0;
+}
 
+.table.type-index .prop:first-child{
+    padding-left: 20px;
+    width:30px !important;
+}
 
 /* table member */
 .table.member .prop:nth-child(6){
@@ -163,11 +172,22 @@ header .tabs li{
 .table.mainpage .prop:last-child{
     justify-content: flex-end;
 }
+/* table board */
+.table.board .prop.largest{
+    width: 725px;
+}
 
-
-.prop.index{
-    padding-left: 20px;
-    width:30px !important;
+.table.board .prop.larger{
+    width: 485px;
+}
+.table.board .prop.large{
+    width: 385px;
+}
+.table.board .prop.middle{
+    width: 265px;
+}
+.table.board .prop.small{
+    width: 200px;
 }
 
 /* btn-container */
