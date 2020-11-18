@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("../head") %>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <%- include("../include/header") %>
+    <div class="sub-container">
+        <ul class="tabs sub">
+            <li onclick="location.href='/manage/board/notice&news'">공지 및 뉴스</li>
+            <li onclick="location.href='/manage/board/introduction'" class="current">소개 및 멤버</li>
+            <li onclick="location.href='/manage/board/youtube'">유튜브</li>
+            <li onclick="location.href='/manage/board/column'">칼럼</li>
+            <li onclick="location.href='/manage/board/FAQ'">FAQ</li>
+            <li onclick="location.href='/manage/board/terms'">약관 관리</li>
+        </ul>
+        <div class="contents-container">
+
+        </div>
+
+
+    </div>
+
+
+    <%- include("../include/footer") %>
+
+
+</body>
+
+</html>

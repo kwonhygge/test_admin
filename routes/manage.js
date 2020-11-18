@@ -55,9 +55,24 @@ router.get('/newsletter', function (req, res, next) {
 router.get('/board/notice&news', function (req, res, next) {
     res.render('board/notice-news', { title: 'Express' });
 });
+router.get('/board/introduction', function (req, res, next) {
+    res.render('board/introduction', { title: 'Express' });
+});
 router.get('/board/youtube', function (req, res, next) {
     res.render('board/youtube', { title: 'Express' });
 });
+router.get('/board/column', function (req, res, next) {
+    res.render('board/column', { title: 'Express' });
+});
+router.get('/board/FAQ', function (req, res, next) {
+    res.render('board/faq', { title: 'Express' });
+});
+router.get('/board/terms', function (req, res, next) {
+    res.render('board/terms', { title: 'Express' });
+});
+
+
+
 
 /* GET order. */
 router.get('/order', function (req, res, next) {

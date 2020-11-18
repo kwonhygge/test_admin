@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("../head") %>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <%- include("../include/header") %>
+    <div class="sub-container">
+        <ul class="tabs sub">
+            <li onclick="location.href='/manage/board/notice&news'">공지 및 뉴스</li>
+            <li onclick="location.href='/manage/board/introduction'">소개 및 멤버</li>
+            <li onclick="location.href='/manage/board/youtube'">유튜브</li>
+            <li onclick="location.href='/manage/board/column'">칼럼</li>
+            <li onclick="location.href='/manage/board/FAQ'">FAQ</li>
+            <li onclick="location.href='/manage/board/terms'" class="current">약관 관리</li>
+        </ul>
+        <div class="contents-container">
+            <div class="tab-contents">
+                <ul class="table board type-index">
+                    <li class="row props">
+                        <div class="prop">No.</div>
+                        <div class="prop largest justify-flex-start">약관 이름</div>
+                        <div class="prop ">최종수정일자</div>
+                        <div class="prop">수정 및 보기</div>
+                    </li>
+                    <li class="row no-data body3">등록된 회원이 없습니다</li>
+                    <li class="row">
+                        <div class="prop">1</div>
+                        <div class="prop largest justify-flex-start">제목</div>
+                        <div class="prop">2020-10-11</div>
+                        <div class="prop edit-delete"><img src="/svg/edit.svg" /><img src="/svg/monitor.svg" /></div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <%- include("../include/footer") %>
+
+
+</body>
+
+</html>
