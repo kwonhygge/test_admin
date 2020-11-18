@@ -53,7 +53,7 @@
 
                 <div class="btn-container">
 
-                    <button class="solid-btn green">리뷰 등록</button>
+                    <button class="solid-btn green" onclick="addContent('/manage/mainpage/add-review')">리뷰 등록</button>
 
                 </div>
             </div>
@@ -64,5 +64,10 @@
 
     <%- include("../include/footer") %>
 </body>
+<script>
+    function addContent(url) {
+        location.replace(url);
+    };
+</script>
 
 </html>

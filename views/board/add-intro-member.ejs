@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-7">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <%- include("../head") %>
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include("../include/header") %>
+
+    <div class="sub-container">
+        <ul class="tabs sub">
+            <li onclick="location.href='/manage/mainpage/main'">메인 설정</li>
+            <li onclick="location.href='/manage/mainpage/rolling-banner'">롤링 배너</li>
+            <li onclick="location.href='/manage/mainpage/program&goods'">프로그램 및 굿즈</li>
+            <li onclick="location.href='/manage/mainpage/youtube&column'">유튜브 및 칼럼</li>
+            <li onclick="location.href='/manage/mainpage/notice&newsletter'">공지 및 뉴스</li>
+            <li onclick="location.href='/manage/mainpage/rolling-review'" class="current">롤링 리뷰</li>
+        </ul>
+
+        <div class="contents-container">
+
+            <!-- 운동 친구 소개 -->
+            <p class="contents-title underline marB-20 body3">운동 친구 소개페이지</p>
+
+            <div class="input-container marB-40">
+                <section class="marB-40">
+                    <p class="body3 marB-10">미션과 비전</p>
+
+                    <div class="input-item">
+                        <input type="text"  class="admin-input large" placeholder="운동친구 소개글">
+                    </div>
+                    <div class="input-item align-top">
+                        <input type="file" id="files">
+                        <img src="/images/file-none.png" id="image" class="thumbnail align-top " alt="pre">
+                        <label for ="files" class="solid-btn darkgray align-top">이미지 업로드</label>
+                    </div>
+                    <button class="solid-btn darkgray">이미지 추가</button>
+                </section>
+
+                <section class="marB-40">
+                    <p class="body3 marB-10">활동 기록</p>
+
+                    <div class="input-item flex marB-10">
+                        <input type="text"  class="admin-input small" placeholder="이름">
+                        <input type="text"  class="admin-input medium" placeholder="한마디">
+                    </div>
+                    <div class="input-item flex marB-10">
+                        <input type="text"  class="admin-input small" placeholder="이름">
+                        <input type="text"  class="admin-input medium" placeholder="한마디">
+                    </div>
+                    <div class="input-item flex marB-10">
+                        <input type="text"  class="admin-input small" placeholder="이름">
+                        <input type="text"  class="admin-input medium" placeholder="한마디">
+                    </div>
+
+                    <button class="solid-btn darkgray">활동기록 추가</button>
+                </section>
+
+                <section class="marB-40">
+                    <p class="body3 marB-10">운동친구 BI</p>
+
+                    <div class="input-item">
+                        <input type="text"  class="admin-input large" placeholder="운동친구 소개글">
+                    </div>
+                    <div class="input-item align-top">
+                        <input type="file" id="files">
+                        <img src="/images/file-none.png" id="image" class="thumbnail align-top " alt="pre">
+                        <label for ="files" class="solid-btn darkgray align-top">이미지 업로드</label>
+                    </div>
+                </section>
+                <button class="solid-btn green">추가버튼</button>
+            </div>
+
+
+
+            <!-- 운동 친구 멤버 -->
+            <p class="contents-title underline marB-20 body3">운동 친구 멤버페이지</p>
+
+            <div class="input-container">
+                <section class="marB-40"> 
+                    <div class="member">
+                        <div class="input-item align-top">
+                            <input type="file" id="files">
+                            <img src="/images/file-none.png" id="image" class="thumbnail align-top " alt="pre">
+                            <label for ="files" class="solid-btn darkgray align-top">이미지 업로드</label>
+                        </div>
+
+                        <div class="input-item flex">
+                            <input type="text"  class="admin-input small" placeholder="이름">
+                            <input type="text"  class="admin-input medium" placeholder="한마디">
+                        </div>
+                        <div class="input-item">
+                            <input type="text"  class="admin-input large" placeholder="경력사항">
+                        </div> 
+                    </div>
+                    <button class="solid-btn darkgray">멤버추가</button>
+                </section>
+            
+                <button class="solid-btn green">운동친구 멤버 저장</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <%- include("../include/footer") %>
+</body>
+
+<script>
+    function addContent(url) {
+        location.replace(url);
+    };
+
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) , {
+                ckfinder: {
+                    uploadUrl: 'localhost:8090/ck/uploadImg'
+                }
+        });
+
+    document.getElementById("files").onchange = function () {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            // get loaded data and render thumbnail.
+            document.getElementById("image").src = e.target.result;
+        };
+
+        // read the image file as a data URL.
+        reader.readAsDataURL(this.files[0]);
+    };
+</script>
+
+</html>

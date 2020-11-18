@@ -12,15 +12,40 @@ router.get('/mainpage/rolling-banner', function (req, res, next) {
 router.get('/mainpage/program&goods', function (req, res, next) {
     res.render('mainpage/program-goods', { title: 'Express' });
 }); 
+router.get('/mainpage/add-goods', function (req, res, next) {
+    res.render('mainpage/add-goods', { title: 'Express' });
+}); 
+router.get('/mainpage/add-program', function (req, res, next) {
+    res.render('mainpage/add-program', { title: 'Express' });
+}); 
 router.get('/mainpage/notice&newsletter', function (req, res, next) {
     res.render('mainpage/notice-newsletter', { title: 'Express' });
 });
+router.get('/mainpage/add-notice', function (req, res, next) {
+    res.render('mainpage/add-notice', { title: 'Express' });
+}); 
+router.get('/mainpage/add-newsletter', function (req, res, next) {
+    res.render('mainpage/add-newsletter', { title: 'Express' });
+}); 
 router.get('/mainpage/youtube&column', function (req, res, next) {
     res.render('mainpage/youtube-column', { title: 'Express' });
+}); 
+router.get('/mainpage/add-youtube', function (req, res, next) {
+    res.render('mainpage/add-youtube', { title: 'Express' });
+}); 
+router.get('/mainpage/add-column', function (req, res, next) {
+    res.render('mainpage/add-column', { title: 'Express' });
 }); 
 router.get('/mainpage/rolling-review', function (req, res, next) {
     res.render('mainpage/rolling-review', { title: 'Express' });
 }); 
+router.get('/mainpage/add-banner', function (req, res, next) {
+    res.render('mainpage/add-banner', { title: 'Express' });
+});
+router.get('/mainpage/add-review', function (req, res, next) {
+    res.render('mainpage/add-review', { title: 'Express' });
+});
+
 /* GET member. */
 router.get('/member/total', function (req, res, next) {
     res.render('member/total', { title: 'Express' });
@@ -69,6 +94,26 @@ router.get('/board/FAQ', function (req, res, next) {
 });
 router.get('/board/terms', function (req, res, next) {
     res.render('board/terms', { title: 'Express' });
+});
+
+
+router.get('/board/add-notice-news', function (req, res, next) {
+    res.render('board/add-notice-news', { title: 'Express' });
+});
+router.get('/board/add-intro-member', function (req, res, next) {
+    res.render('board/add-intro-member', { title: 'Express' });
+});
+router.get('/board/add-column-content', function (req, res, next) {
+    res.render('board/add-column-content', { title: 'Express' });
+});
+router.get('/board/add-faq-content', function (req, res, next) {
+    res.render('board/add-faq-content', { title: 'Express' });
+});
+router.get('/board/add-terms-content', function (req, res, next) {
+    res.render('board/add-terms-content', { title: 'Express' });
+});
+router.get('/board/add-youtube-content', function (req, res, next) {
+    res.render('board/add-youtube-content', { title: 'Express' });
 });
 
 

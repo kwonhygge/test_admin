@@ -91,6 +91,10 @@ header .tabs li{
     padding-left: 20px;
 }
 
+.contents-title.underline {
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #e6e6e6;
+}
 /* tab-contents */
 .tab-contents{
     margin-bottom: 40px;

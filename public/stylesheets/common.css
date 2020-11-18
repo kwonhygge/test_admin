@@ -47,6 +47,9 @@
     display: flex;
     justify-content: space-between;
   }
+  .align-top {
+    vertical-align: top;
+  }
   /* float */
   .float-right {
     float: right;
